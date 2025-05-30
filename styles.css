@@ -1,0 +1,57 @@
+header {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-content: space-between;
+	align-items:
+	position: relative;
+	color: white;
+	font-weight: bold;
+background: #0088ff;
+background: linear-gradient(90deg, rgba(0, 136, 255, 1) 0%, rgba(87, 177, 199, 1) 46%, rgba(0, 234, 255, 1) 100%);
+border-radius: 5px;
+height: 7em;
+}
+
+body {
+	background: gray;
+}
+body > * {
+	margin: .5em;
+}
+
+main > section {
+	background: white;
+	margin: 2em;
+	padding: 1em;
+	border-radius: 10px;
+}
+/* */
+#name {
+	font-size:2em;
+	text-shadow: black .05em .05em;
+}
+#header-text{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+/* Info on the grid aligns */
+header > *:nth-child(1){
+	align-self: center;
+	justify-self: center;
+}
+header > *:nth-child(2){
+	align-self: center;
+}
+header > *:nth-child(3){
+	align-self: center;
+	justify-self:center;
+}
+#email {
+}
+
+h2 {
+	color: red;
+	font-size: 1.5em;
+}

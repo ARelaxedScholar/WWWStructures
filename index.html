@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <!-- A reset sheet, I found online that I use as a template -->
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <!-- My actual styling -->
+    <link rel="stylesheet" href="./styles.css"><title>Kouakou Jedidiah Ange-Emmanuel - Portfolio</title>
+</head>
+<body>
+
+    <header>
+			<div>
+        <a href="https://www.uottawa.ca/en" target="_blank">
+            <img src="./img/uottawa-logo.svg" alt="uOttawa Logo" height=90 width=90/>
+        </a>
+			</div>
+	<div id="header-text">
+        <h1 id="name">Kouakou Jedidiah</h1>
+        <p id="email"><a href="mailto:angemmanuel.kouakou@gmail.com">angemmanuel.kouakou@gmail.com</a></p>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#skills">Skills</a> |
+        <a href="#preferences-form">Preferences</a> |
+        <a href="#feedback">Feedback</a>
+    </nav>
+		
+		</div>
+        <img class="profile-image" src="./img/profile-picture.jpg" alt="Profile Image" width=90 height=90/>
+
+    </header>
+    
+		<main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am passionate about language learning and love AI and its applications (about as much as I am terrified of it.) <mark>My goal is to contribute to innovative projects that make a real impact.</mark></p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill Name</th>
+                        <th>Proficiency Level (1-10)</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>9/10</td>
+                        <td><meter value="9" min="0" max="10">9 out of 10</meter></td>
+                    </tr>
+                    <tr>
+                        <td>Rust</td>
+                        <td>8/10</td>
+                        <td><meter value="8" min="0" max="10">8 out of 10</meter></td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>8/10</td>
+                        <td><meter value="8" min="0" max="10">8 out of 10</meter></td>
+                    </tr>
+                    <tr>
+                        <td>Go</td>
+                        <td>8/10</td>
+                        <td><meter value="8" min="0" max="10">8 out of 10</meter></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <section id="preferences-form">
+            <h2>Your Preferences</h2>
+            <form autocomplete="on">
+                <p><strong>Preferred Work Environment:</strong></p>
+                <input id="remote" name="work_environment" type="radio" value="remote" />
+                <label for="remote">Remote</label><br />
+                <input id="hybrid" name="work_environment" type="radio" value="hybrid" />
+                <label for="hybrid">Hybrid</label><br />
+                <input id="in_person" name="work_environment" type="radio" value="in_person" />
+                <label for="in_person">In-person</label><br />
+
+                <p><strong>What interests you?</strong></p>
+                <input id="ml" name="interests" type="checkbox" value="machine_learning" />
+                <label for="ml">Machine Learning</label><br />
+                <input id="ai" name="interests" type="checkbox" value="ai" />
+                <label for="ai">AI</label><br />
+                <input id="language_learning" name="interests" type="checkbox" value="language_learning" />
+                <label for="language_learning">Language Learning</label><br />
+
+                <label for="fav_language">Favorite Programming Language:</label>
+                <input id="fav_language" list="languages" name="fav_language" type="text" />
+                <datalist id="languages">
+                    <option value="Python"></option>
+                    <option value="JavaScript"></option>
+                    <option value="Java"></option>
+                    <option value="C++"></option>
+                    <option value="Go"></option>
+                    <option value="Rust"></option>
+                </datalist>
+                <br />
+                <label for="search_input">Just some field:</label>
+                <input id="search_input" autocomplete="on" name="search_input" type="text" placeholder="e.g., web development" />
+            </form>
+            Select a number (1-100):
+            <div>
+                <input id="slider" max="100" min="0" name="volume" type="range" />
+                <label for="slider">An inconspicuous slider</label>
+            </div>
+        </section>
+
+        <section id="feedback">
+            <h2>Feedback</h2>
+            <details>
+                <summary>Why did you choose this field?</summary>
+                <p>I chose this field because of my fascination with how technology can solve complex problems and improve lives. The rapid pace of innovation and the endless opportunities for learning and creation deeply appeal to me.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        </footer>
+
+</body>
+</html>
