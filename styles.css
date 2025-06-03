@@ -12,18 +12,32 @@ border-radius: 5px;
 height: 7em;
 }
 
+#header-text nav > a {
+	transition: all 0.3s ease-in-out;
+}
+#header-text nav > a:link, a:visited {
+	color: #cce6ff;
+	text-decoration: none;
+}
+#header-text nav > a:hover {
+	color: white;
+	text-decoration: underline;
+}
 body {
 	background: gray;
+	background-image: url("./img/gray.jpg");
 }
 body > * {
 	margin: .5em;
 }
 
 main > section {
-	background: white;
+	background: rgba(255, 255, 255, 0.8);
 	margin: 2em;
-	padding: 1em;
+	padding: 2em;
 	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	border: 2px black solid;
 }
 /* */
 #name {
@@ -36,22 +50,50 @@ main > section {
 	align-items:center;
 }
 
+header {
+	box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
 /* Info on the grid aligns */
 header > *:nth-child(1){
+	margin-left: 50px;
 	align-self: center;
-	justify-self: center;
+	justify-self: left;
+	border: 12px rgb(139, 0, 0) solid;
 }
 header > *:nth-child(2){
 	align-self: center;
 }
 header > *:nth-child(3){
 	align-self: center;
-	justify-self:center;
+	justify-self:right;
+	margin-right: 50px;
+	position: absolute;
 }
 #email {
 }
 
 h2 {
-	color: red;
+	color: rgb(149,0,0);
 	font-size: 1.5em;
+	font-family: Roboto, sans-serif;
+	font-weight: 800;
+}
+
+body {
+	color: #333;
+}
+
+table {
+	width: 80%;
+	height: auto;
+	border: 1px black solid;
+	border-collapse: collapse;
+}
+th {
+	font-weight: 700;
+}
+th, td {
+	border: 1px solid black;
+	padding: 5px;
 }

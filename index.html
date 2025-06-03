@@ -79,12 +79,11 @@
             <h2>Your Preferences</h2>
             <form autocomplete="on">
                 <p><strong>Preferred Work Environment:</strong></p>
-                <input id="remote" name="work_environment" type="radio" value="remote" />
-                <label for="remote">Remote</label><br />
-                <input id="hybrid" name="work_environment" type="radio" value="hybrid" />
-                <label for="hybrid">Hybrid</label><br />
-                <input id="in_person" name="work_environment" type="radio" value="in_person" />
-                <label for="in_person">In-person</label><br />
+		<select name="work_environment" id="work_environment">
+			<option value="remote">Remote</option>
+			<option value="hybrid">Hybrid</option>
+			<option value="in_person">In-Person</option>
+		</select>
 
                 <p><strong>What interests you?</strong></p>
                 <input id="ml" name="interests" type="checkbox" value="machine_learning" />
